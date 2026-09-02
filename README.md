@@ -11,29 +11,29 @@ sequence that could realistically encode a gene.
 
 ## Features
 
-- **Sequence validation** — checks that input only contains valid DNA bases (A, T, C, G)
-- **Base composition analysis** — counts occurrences of each nucleotide
-- **GC content calculation** — calculates the percentage of G and C bases in the 
+- **Sequence validation** - checks that input only contains valid DNA bases (A, T, C, G)
+- **Base composition analysis** - counts occurrences of each nucleotide
+- **GC content calculation** - calculates the percentage of G and C bases in the 
   sequence. This matters biologically because G-C base pairs form 3 hydrogen bonds 
   compared to only 2 for A-T pairs, making GC-rich DNA more thermally stable.
-- **Reverse complement generation** — DNA is double-stranded and antiparallel, 
+- **Reverse complement generation** - DNA is double-stranded and antiparallel, 
   meaning the second strand runs in the opposite direction and pairs base-for-base 
   with the first (A-T, C-G). This function simulates reading the opposite strand, 
   which matters because genes can be encoded on either strand of DNA.
-- **Transcription** — converts a DNA sequence into RNA by replacing every T with U, 
+- **Transcription** - converts a DNA sequence into RNA by replacing every T with U, 
   simulating the first step of gene expression.
-- **Translation** — converts an RNA sequence into a chain of amino acids by reading 
+- **Translation** - converts an RNA sequence into a chain of amino acids by reading 
   it in groups of three bases (codons), using the genetic code. Translation stops 
   as soon as a stop codon is reached, since that's the signal that tells a ribosome 
   the protein is complete.
-- **ORF Finder** — scans a sequence for regions that start with a start codon (ATG) 
+- **ORF Finder** - scans a sequence for regions that start with a start codon (ATG) 
   and end with a stop codon (TAA, TAG, or TGA), representing candidate protein-coding 
   regions.
-- **Six-frame search** — a single sequence can be read in 3 different reading frames 
+- **Six-frame search** - a single sequence can be read in 3 different reading frames 
   depending on where you start counting groups of 3, and genes can appear on either 
   the forward strand or the reverse complement strand. This tool checks all 6 
   possible frames (3 forward + 3 reverse) to make sure no potential gene is missed.
-- **Interactive visualizations** — bar chart of nucleotide composition, pie chart 
+- **Interactive visualizations** - bar chart of nucleotide composition, pie chart 
   of GC vs AT content, and a chart showing where each ORF sits along the sequence.
 
 ## Biology Background
